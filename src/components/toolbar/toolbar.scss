@@ -1,0 +1,10 @@
+.text {
+  position: relative;
+
+  .badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+  }
+}
