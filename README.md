@@ -1,4 +1,7 @@
-How to run project: 1. Install npm packages using Yarn by running `yarn install` in project root folder. 2. Start project by runnig `yarn start` in project root folder. 3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to run project: 
+1. Install npm packages using Yarn by running `yarn install` in project root folder.
+2. Start project by runnig `yarn start` in project root folder.
+3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Available Scripts
 
