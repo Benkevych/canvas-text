@@ -4,9 +4,17 @@ import { Row, Col, Button } from 'react-bootstrap';
 import { CANVAS_SIZE } from '../../constants/canvas';
 import Toolbar from '../toolbar/toolbar';
 
-const Canvas = props => {
-  const canvasRef = React.useRef(null);
+/**
+ * Canvas functional component.
+ */
+const Canvas = () => {
+  const canvasRef = React.useRef(); // html5 canvas element reference
 
+  /**
+   * Insert text into canvas.
+   *
+   * @param {Object} values: text properties object.
+   */
   const insertText = values => {
     const { text, fontSize: size, font, x, y, color } = values;
     const canvas = canvasRef.current;
@@ -16,6 +24,9 @@ const Canvas = props => {
     ctx.fillText(text, x, y);
   };
 
+  /**
+   * Convert canvas into png image.
+   */
   const download = () => {
     const canvas = canvasRef.current;
     canvas.toBlob(blob => {
